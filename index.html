@@ -1,18 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three.JS WebGPU Examples</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-</head>
+  <body id="body">
+    <script src="/src/threeGpu179.js" defer></script>
+    <script src="/src/threeExtendedGpu179.js" defer></script>
+    <script src="/src/app.js" defer></script>
 
-<body style="margin: 0;  padding: 0;">
-  <div id="app"></div>
-  <script src="/src/threeGpu179.js"></script>
-  <script src="/src/threeExtendedGpu179.js"></script>
-  <script src="/src/app.js"></script>
-</body>
-
+    <div id="main">
+      <div id="exampleMenu" class="sidenav">
+        <a href="#" onclick="loadScript('/src/examples/BloomNodeExample.js')"
+          >BloomNodeExample</a
+        >
+        <a href="#" onclick="loadScript('/src/examples/RGBELoaderExample.js')"
+          >RGBELoaderExample</a
+        >
+        <a
+          href="#"
+          onclick="loadScript('/src/examples/SimplifyModifierExample.js')"
+          >SimplifyModifierExample</a
+        >
+        <a
+          href="#"
+          onclick="loadScript('/src/examples/TextureLoaderWithProgressExample.js')"
+          >TextureLoaderWithProgressExample</a
+        >
+      </div>
+      <div id="sampleScript"></div>
+    </div>
+    <canvas id="sample"></canvas>
+  </body>
 </html>
